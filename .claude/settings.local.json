@@ -3,7 +3,10 @@
     "allow": [
       "PowerShell(if \\(-not $?\\) { \"Git n�o encontrado\" })",
       "PowerShell(winget install --id Git.Git -e --source winget --accept-package-agreements --accept-source-agreements)",
-      "PowerShell($env:PATH += \";C:\\\\Program Files\\\\Git\\\\cmd\"; cd \"c:\\\\Users\\\\Admin\\\\Desktop\\\\YESH - Canva Premium Imobiliaria\"; git init; git config user.email \"neosdigital1406@gmail.com\"; git config user.name \"Yesh Media\"; git add .; git commit -m \"feat: landing page Yesh Media Packs - initial commit\")"
+      "PowerShell($env:PATH += \";C:\\\\Program Files\\\\Git\\\\cmd\"; cd \"c:\\\\Users\\\\Admin\\\\Desktop\\\\YESH - Canva Premium Imobiliaria\"; git init; git config user.email \"neosdigital1406@gmail.com\"; git config user.name \"Yesh Media\"; git add .; git commit -m \"feat: landing page Yesh Media Packs - initial commit\")",
+      "PowerShell($env:PATH += \";C:\\\\Program Files\\\\Git\\\\cmd\"; cd \"c:\\\\Users\\\\Admin\\\\Desktop\\\\YESH - Canva Premium Imobiliaria\"; git remote add origin https://github.com/neosdigital/yeshmedia.git; git branch -M main; git push -u origin main)",
+      "PowerShell($env:PATH += \";C:\\\\Program Files\\\\Git\\\\cmd\"; cd \"c:\\\\Users\\\\Admin\\\\Desktop\\\\YESH - Canva Premium Imobiliaria\"; git pull origin main --allow-unrelated-histories --no-edit; git push -u origin main)",
+      "PowerShell($env:PATH += \";C:\\\\Program Files\\\\Git\\\\cmd\"; cd \"c:\\\\Users\\\\Admin\\\\Desktop\\\\YESH - Canva Premium Imobiliaria\"; git checkout --ours index.html; git add index.html; git commit -m \"resolve merge: keep local landing page\"; git push -u origin main)"
     ]
   }
 }
