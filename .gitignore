@@ -1,0 +1,12 @@
+# Sistema
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Editor
+.vscode/
+*.sublime-workspace
+
+# Temporários
+*.tmp
+*.log
